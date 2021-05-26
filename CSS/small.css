@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+h1{
+    font-family: 'Odibee Sans';
+}
 body{
     display: block;
     margin: 0;
