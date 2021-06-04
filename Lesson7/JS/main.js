@@ -1,17 +1,13 @@
 const images = document.querySelectorAll("[data-src]");
 
-function preloadImage(img){
-    const src = img.getAttribute("data-src");
-    if(!src){
-        return;
-    }
-
-    img.src = src
+function preloadImage(image){
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = ()=>{image.removeAttribute('data-src');};
 }
 
 
 const imgOptions = {
-    thredshold: 0,
+    thredshold: 1,
     rootMargin: "0px 0px 400px 0px"
 };
 
@@ -28,5 +24,5 @@ const imgObserver = new IntersectionObserver((entries, imgPbserver) => {
 
 
 images.forEach(image => {
-    imgObserver.observe(img)
+    imgObserver.observe(image)
 })

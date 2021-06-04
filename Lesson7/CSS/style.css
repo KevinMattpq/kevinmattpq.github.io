@@ -11,8 +11,22 @@ img{
     width: 300px;
     height:400px;
     margin-top: 15px;
+   
 }
 .father{
     text-align: center;
     align-items: center;
+}
+[data-src]{
+    min-width: 50px;
+    min-height: 50px;
+}
+
+img[data-src]{
+    filter: blur(.5em);
+}
+
+img{
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
