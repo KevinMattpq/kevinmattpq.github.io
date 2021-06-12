@@ -51,7 +51,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -105,7 +105,7 @@ main {
 /*FORM*/
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 3px solid #445ba9;
     border-radius: 10px;
     padding: .5rem 2%;
 }
@@ -125,7 +125,7 @@ form label.top input, form label.top select{
     -webkit-appearance:none;
     display: block;
     font-size: 1rem;
-    border: solid 1 px #999;
+    border: solid 3 px #999;
     border-radius: 4px;
     padding: .75rem;
     color: #555;
