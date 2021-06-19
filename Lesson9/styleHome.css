@@ -1,0 +1,38 @@
+.imgCard{
+    width: 15rem !important;
+}
+
+section{
+    border: 1px gray solid;
+    background-color: #ccefff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+ .cards{
+    display: grid;
+    grid-template-columns: 1fr;
+} 
+
+@media only screen and (min-width:520px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 15px;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width:960px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        
+    }
+    .imgCard{
+        margin-top: 100px;
+    }
+}
