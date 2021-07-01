@@ -57,7 +57,7 @@ nav img{
 	.navigation li:first-child {
 		display: none;
 	}
-
+	
 	
 	.childFather{
 		width: 100%;
@@ -68,4 +68,5 @@ nav img{
 	.floatingSummary{
 		display: none;
 	}
+	
 }

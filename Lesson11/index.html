@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Lesson5/smallPreston.css">
-    <link rel="stylesheet" href="/Lesson5/largePreston.css">
+    <link rel="stylesheet" href="/Lesson6/CSS/smallL6.css">
+    <link rel="stylesheet" href="/Lesson6/CSS/largeL6.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <title>Weather Site</title>
+    <title>(API Test)Weather Site</title>
 </head>
 <body>
 <header class="container">
@@ -17,9 +18,9 @@
 <nav>
 	<ul class="navigation">
 		<li><a class="ham" href="#"><img src="/Lesson4/IMG/9450879241555936706-128.png" width="44px" alt="Menu"> Menu</a></li>
-		<li><a href="https://kevinmattpq.github.io/">Home</a></li>
-		<li><a href="#" class="active">Forecast</a></li>
-		<li><a href="#">Preston</a></li>
+		<li><a href="/Lesson9/index.html">Home</a></li>
+		<li><a href="#">Forecast</a></li>
+		<li><a href="#" class="active">Preston</a></li>
 		<li><a href="/Lesson7/gallery.html">Gallery</a></li>
 		<li><a href="/Lesson8/stormcenter.html">Storm Center</a></li>
 		<li><a href="#">Social Media</a></li>
@@ -30,15 +31,21 @@
     <hr>
     <h2>Preston Idaho</h2>
     <div class="container mainImg">
-        <img src="/Lesson5/img/idaho.jpg" alt="Provisional Image">
+        <picture class="hero">
+            <source media="(max-width:800px)" srcset="/Lesson6/img/mediumImage.jpeg" >
+            <source media="(max-width:1100px)" srcset="/Lesson6/img/largeImage.jpeg" >
+            <img src="/Lesson6/img/wdd230_image_franklinOriginal.jpeg" alt="Image">
+        </picture>
+        
         <div class="floatingSummary">
             <div class="floatingContent">
                 <h4>Today's Weather </h4>
                 <ul>
-                    <li>Currently: Sunny</li>
-                    <li>Max: 65F</li>
-                    <li>Min: 59F</li>
-                    <li>Humidity: 15%</li>
+                    <li>Currently: <span id="currentTemperature"></span>&deg; F</li>
+                    <li>Max: <span id="max"></span>&deg; F</li>
+                    <li>Min: <span id="min"></span>&deg; F</li>
+                    <li>Humidity: <span id="humidity"></span></li>
+                    <li>Wind chill:<div id="windchillValue"></div></li>
                 </ul>
             </div>
         </div>
@@ -52,11 +59,11 @@
         <hr>
         <h3>Five Days Forecast</h3>
         <div class="fiveDaysImg">
-            <img src="/Lesson5/img/sunnyDay.jpg" width="150px" alt="day1">
-            <img src="/Lesson5/img/sunnyDay.jpg" width="150px" alt="day1">
-            <img src="/Lesson5/img/sunnyDay.jpg" width="150px" alt="day1">
-            <img src="/Lesson5/img/cloudy.jpg" width="150px" height="150PX" alt="day1">
-            <img src="/Lesson5/img/snow-weather-icon-png.png" width="150px" height="150px" alt="day1">
+           <p><span id="dayofweek1"></span> : <span id="forcast1"></span>&deg;</p>
+           <p><span id="dayofweek2"></span> : <span id="forcast2"></span>&deg;</p>
+           <p><span id="dayofweek3"></span> : <span id="forcast3"></span>&deg;</p>
+           <p><span id="dayofweek4"></span> : <span id="forcast4"></span>&deg;</p>
+           <p><span id="dayofweek5"></span> : <span id="forcast5"></span>&deg;</p>
         </div>
        
         <h3>Summary</h3>
@@ -85,6 +92,19 @@
     </div>
    
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+      google: {
+      families: [
+      'Odibee Sans'
+      ]
+}
+});
+</script>
 <script src="/Lesson4/main.js"></script>
+<script src="/Lesson6/JS/windchill.js"></script>
+<script src="/Lesson10/preston-10.js"></script>
+<script src="/Lesson10/preston-2-2.js"></script>
 </body>
 </html>
