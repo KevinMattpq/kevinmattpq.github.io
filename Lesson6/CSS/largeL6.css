@@ -91,3 +91,23 @@ footer ul{
 .floatingContent{
     text-align: center;
 }
+
+.fiveDaysImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+.regDay{
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.dayName{
+    background-color:#3e3e3e;
+    color: white;
+    margin-top: 0;
+}
+.temperatureDay{
+    background-color:#2e62c9;
+    color: white;
+    margin-bottom: 0;
+}
