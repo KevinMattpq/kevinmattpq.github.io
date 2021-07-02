@@ -111,3 +111,14 @@ footer ul{
     color: white;
     margin-bottom: 0;
 }
+
+#event{
+    border: 2px solid gray;
+    background-color: #36454f;
+    margin-bottom: 15px;
+}
+.eventContent{
+    text-align: center;
+    color: white;
+}
+ 
