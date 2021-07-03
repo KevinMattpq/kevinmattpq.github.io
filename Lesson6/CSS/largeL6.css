@@ -34,7 +34,7 @@ header img{
  .mainImg{
      text-align: center;
  }
-.fiveDaysImg{
+.fiveDForecast{
     text-align: center;
 }
 
@@ -92,11 +92,7 @@ footer ul{
     text-align: center;
 }
 
-.fiveDaysImg{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-}
+
 .regDay{
     border: 2px solid gray;
     border-radius: 10px;

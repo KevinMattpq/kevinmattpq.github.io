@@ -62,11 +62,23 @@ nav img{
 	.childFather{
 		width: 100%;
 	}
+	.fiveDForecast{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		column-gap: 10px;
+	}
+
 }
 
 @media only screen and (max-width: 400px){
 	.floatingSummary{
 		display: none;
+	}
+	.fiveDForecast{
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+		column-gap: 10px;
 	}
 	
 }
