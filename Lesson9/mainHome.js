@@ -9,7 +9,7 @@ fetch(requestURL)
     //console.table(jsonObject);
     const towns = jsonObject["towns"];
     const cards = document.querySelector('.cards');
-    for (let i = 0; i < towns.length; i++ ) {
+    for (let i = 0; i < 3; i++ ) {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
         let subtitle = document.createElement('span');
