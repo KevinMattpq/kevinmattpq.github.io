@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/Final Project/CSS/normalize.css">
+    <link rel="stylesheet" href="/Final Project/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header2 homeContact">
+        <div class="container header-content">
+            <div class="bar">
+                <nav class="navegation">
+                    <a href="/Final Project/index.html">Home</a>
+                    <a href="join.html">join</a>
+                    <a href="businessestj.html">Directory</a>
+                    <a href="/Final Project/contact.html">Contact</a>
+                </nav>
+            </div>
+            <h1>TIJ Life</h1>
+            <p class="miniText">The best place to invest your money</p>
+        </div>
+    </header>
+    <h1 class="h1Contact container">Join us!</h1>
+
+    <main class="container">
+        <div class="father2">
+            <div class="childc1">
+                <img src="/Final Project/IMG/contact.jpg" class="imgcontact" width="500px" alt="Image contact">
+            </div>
+            <div class="childc2">
+                <h3>We will provide the best service possible</h3>
+                <p>Nulla eget metus suscipit, vehicula libero et, iaculis nisl. Vestibulum nec libero porta,
+                    sollicitudin diam sit amet, iaculis massa. Donec elementum nisi felis, ac euismod magna consectetur
+                    et. Mauris at enim venenatis, viverra erat vitae, fermentum sapien. Etiam a sem diam. Donec massa
+                    tortor, mollis non est in, dignissim posuere urna. Donec tortor sapien, rhoncus quis fermentum et,
+                    blandit in risus.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="formToContact">
+            <h2 class="textC">Please fill out the form to join us!</h2>
+            <form class="contacto">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" class="name" id="name" placeholder="your name here">
+
+                    <label for="Last name">Last Name:</label>
+                    <input type="text" class="name"  placeholder="your Last name here">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+
+                    <label for="cellphone">Cellphone</label>
+                    <input type="tel" id="cellphone" placeholder="Cellphone number" required>
+
+                    <label for="message">Message</label>
+                    <textarea name="message"></textarea>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Property Information</legend>
+                    <label for="options">Buy or Sell properties</label>
+                    <select id="options">
+                        <option value="" disabled selected>-- select an option --</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Sell">Sell</option>
+                    </select>
+                    <label for="Business name">Business Name:</label>
+                    <input type="text" class="name"  placeholder="Business name here">
+
+                    <label for="Last name">Business Address:</label>
+                    <input type="text" class="name"  placeholder="address here!">
+
+                    <label for="Last name">Business Website:</label>
+                    <input type="text" class="name"  placeholder="Website here!">
+
+                    
+                    <label for="description">Description</label>
+                    <textarea name="description"></textarea>
+                   
+                </fieldset>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <p>How do you wish to be contact?</p>
+                    <div class="forma_contacto">
+                        <label for="cellphone">Cellphone</label>
+                        <input type="radio" value="Cellphone" name="contact">
+
+                        <label for="correo">E-mail</label>
+                        <input type="radio" value="Email" name="contact">
+                    </div>
+                    <p>If you chose phone please selct date and time</p>
+                    <label for="date">Date</label>
+                    <input type="date">
+
+                    <label for="hour">Hour</label>
+                    <input type="time">
+
+
+
+                </fieldset>
+                <input type="submit" value="Send" class="botton-Send">
+            </form>
+        </div>
+    </main>
+
+
+    <footer class="site_footer seccion">
+        <div class="container footer-content">
+            <nav class="navegation">
+                <a href="/Final Project/index.html">Home</a>
+                <a href="join.html">join</a>
+                <a href="businessestj.html">Directory</a>
+                <a href="/Final Project/contact.html">Contact</a>
+            </nav>
+            <p class="copyright">All rights reserved 2021 &copy; </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
